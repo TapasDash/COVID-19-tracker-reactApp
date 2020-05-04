@@ -1,0 +1,29 @@
+.container {
+  margin: 50px 0px;
+  /* margin 50px top and bottom and 0px from left and right */
+}
+
+.card {
+  margin: 0 2% !important;
+  /* The reason why it didnt applied to the cards becoz it has inline css properties aplied to the cards and
+it has the first prioprity over external css so...to make it override we have to use !important after setting
+the css properties */
+}
+
+.infected {
+  border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+}
+
+.recovered {
+  border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+}
+
+.deaths {
+  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 770px) {
+  .card {
+    margin: 2% 0 !important;
+  }
+}
