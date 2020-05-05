@@ -20,7 +20,6 @@ const CountryPicker = ({ handleCountryChange }) => {
     fetchAPI();
   }, [setFetchedCountries]); //setFetchedCountries in the array means fetchCountries() will run
   //only when there would be change in the setFetchedCountries i.e countries names i.e distinct country names
-  console.log(fetchedCountries);
   return (
     <FormControl className={styles.formControl}>
       <NativeSelect
